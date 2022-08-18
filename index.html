@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crud with JSON data</h1>
+        </header>
+        <div class="ser-box"><input id="search" type="text" placeholder="Search Here"></div>
+        <div class="ins-box">
+            <form action="" id="inForm">
+                Name: <input type="text" id="name" name="iname">
+                Age: <input type="number" id="age" name="iage">
+                City: <input type="text" id="city" name="icity">
+                <input type="submit" id="isubmit">
+            </form>
+        </div>
+        <div id="table-data">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>CITY</th>
+                        <th>EDIT</th>
+                        <th>DELETE</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="success-msg">dgsdffjhfdgdffh sf</div>
+        <div id="error-msg"></div>
+        <div id="popup">
+            <div class="popup-box">
+                <form id="upForm">
+                    <input type="hidden" id="up-id" name="id">
+                    <input type="text" id="up-name" name="uname" placeholder="Enter Name">
+                    <input type="number" id="up-age"  name="uage" placeholder="Enter Age">
+                    <input type="text" id="up-city" name="ucity" placeholder="Enter City">
+                    <input type="submit" id="up-sub">
+                </form>
+                <div class="pop-close">x</div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"> </script>
+</body>
+</html>
